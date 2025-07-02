@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="#" class="logo">Mukund Dewangan.</a>
+
+        <ul class="desktop-menu">
+          <li>
+            <a href="index.html" class="nav-item" style="font-size: 19px"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="nav-item"
+              style="--i: 1; font-size: 19px"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="skill.html"
+              class="nav-item"
+              style="--i: 2; font-size: 19px"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="project.html"
+              class="nav-item"
+              style="--i: 3; font-size: 19px"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-item" style="--i: 4; font-size: 19px"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <div class="intro-text">
+          <h2 class="intro-heading">Hello!, its me</h2>
+          <h1><strong>Mukund Dewangan</strong></h1>
+          <span style="font-size: 30px" class="yo"
+            >And I'm a <span id="auto" class="highlight"></span
+          ></span>
+          <p>
+            I'm a Web Designer with over 3 years of experience. My expertise
+            includes website creation, frontend design, and much more.
+          </p>
+          <div class="home-sci">
+            <a
+              href="https://www.linkedin.com/in/mukund-dewangan-19a127345/"
+              class="fa-brands fa-linkedin"
+              target="_blank"
+              style="--o: 1"
+            ></a>
+            <a
+              href="https://www.instagram.com/_mukund_54_/"
+              class="fa-brands fa-instagram"
+              target="_blank"
+              style="--o: 2"
+            ></a>
+            <a
+              href="https://www.github.com/Mukunddewangan/"
+              class="fa-brands fa-github"
+              target="_blank"
+              style="--o: 3"
+            ></a>
+            <a
+              href=""
+              class="fa-brands fa-whatsapp"
+              target="_blank"
+              style="--o: 4"
+            ></a>
+          </div>
+          <a href="about.html" class="more">More About Me</a>
+        </div>
+        <div>
+          <img src="IMG_20250102_171353_043.jpg" alt="" class="profile-img" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Mukund Dewangan have all rights.</p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/0ccf56a813.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#auto", {
+        strings: [
+          "Web developer",
+          "Student",
+          "Programmer",
+          "Software Engineer",
+        ],
+        typeSpeed: 150,
+        backSpeed: 20,
+        loop: true,
+      });
+      let tabs = document.querySelectorAll(".nav-item"); // also fix class name if needed
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", (e) => {
+          // Remove 'active' class from all tabs
+          tabs.forEach((t) => t.classList.remove("active"));
+
+          // Add 'active' class to clicked tab
+          tab.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

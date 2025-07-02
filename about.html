@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+          <a href="#" class="logo">Portfolio.</a>
+  
+          <ul class="desktop-menu">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li ><a href="about.html" >About</a></li>
+            <li ><a href="skill.html" >Skills</a></li>
+            <li ><a href="project.html" >Project</a></li>
+            <li ><a href="#contact" >Contact</a></li>
+          </ul>
+      </header>
+      <main>
+        <section class="container">
+           <div class="intro-text">
+            <h1><strong> Mukund Dewangan</strong></h1>
+            <p>Hello! users I am student of class 8 and this is my first portfolio website. I have put my all knowledge of 2 years of learning coding. I know i am a biggener in this project or in this coding journey but you can tech me more about all this. I have made more beginner project you can check them ut in the project tab. Examples are I have made a simple Calculator, Stopwatch, Digital clock. Also you can visit my my linkedIn profile by link pasted here. 👇👇👇 </p>
+            <p>LinkedIn profile. <a href="https://www.linkedin.com/in/mukund-dewangan-19a127345/" target="_blank" class="hello">Click here</a></p>
+
+           </div>
+           <div>
+            <img src="IMG_20250102_171353_043.jpg" alt="" class="profile-img" />
+          </div>
+        </section>
+      </main>
+      <footer>&copy; Mukund Dewangan have all rights.</footer>
+      <script >
+        let tabs = document.querySelectorAll(".nav-item"); // also fix class name if needed
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", (e) => {
+
+    // Remove 'active' class from all tabs
+    tabs.forEach((t) => t.classList.remove("active"));
+
+    // Add 'active' class to clicked tab
+    tab.classList.add("active");
+  });
+});
+
+      </script>
+</body>
+</html>
